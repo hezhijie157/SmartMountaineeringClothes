@@ -126,6 +126,7 @@ static void Task_GetPicture(void)
 		OV7725_RCK_L;
 		OV7725_RRST(SET);				//复位读指针结束 
 		OV7725_RCK_H; 
+		
     pname=mymalloc(SRAMIN,30);	//为带路径的文件名分配30个字节的内存			
     camera_new_pathname(pname);
 //		bmp_encode(pname,0,0,240,320,0);
